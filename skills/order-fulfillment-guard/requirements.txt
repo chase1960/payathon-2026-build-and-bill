@@ -1,0 +1,2 @@
+# 运行期零第三方依赖，仅使用 Python 3.10+ 标准库（argparse/sqlite3/dataclasses/decimal…）。
+# 如需把 JSON 结论接入其他系统，可自行添加 requests 等库，核心包不强制依赖。

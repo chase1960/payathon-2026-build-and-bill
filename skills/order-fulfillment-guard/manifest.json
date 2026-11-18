@@ -1,0 +1,25 @@
+{
+  "name": "order-fulfillment-guard",
+  "version": "0.1.0",
+  "display_name": "交易履约核验官 OFG",
+  "track": "Skill Pay",
+  "summary": "面向 AI 付卖家的支付后履约核验技能：Payment-Proof 五要素校验、权益幂等核销、日结对账、退款初判与风控信号。",
+  "entrypoint": "python3 -m scripts.ofg.cli",
+  "runtime": {
+    "python": ">=3.10",
+    "dependencies": []
+  },
+  "pricing": [
+    {"model": "buyout", "price_cny": 19.9, "note": "单次买断，交付明文，本地运行"},
+    {"model": "per_call", "price_cny": 0.5, "note": "按次调用，不自动续费"}
+  ],
+  "keywords": [
+    "Payment-Proof", "402", "防重放", "幂等", "核销", "对账", "退款",
+    "风控", "AI付", "Skill Pay"
+  ],
+  "safety": {
+    "network": "本技能不发起网络请求",
+    "secrets": "不读取或存储任何商户密钥",
+    "money_action": "仅输出判定建议，不执行真实扣款或退款"
+  }
+}
