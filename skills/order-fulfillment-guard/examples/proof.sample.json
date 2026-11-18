@@ -1,0 +1,9 @@
+{
+  "payment_proof": "7cf8a6a93c924e13eaa4bf20c3a487f30d1fbdb759a1f229b4091b7d0158ab23",
+  "trade_no": "20261118008281113177600000090001",
+  "client_session": "sess_abc_001",
+  "out_trade_no": "ORDER_1001",
+  "amount": "9.90",
+  "resource_id": "res_research_report_basic",
+  "active": true
+}
