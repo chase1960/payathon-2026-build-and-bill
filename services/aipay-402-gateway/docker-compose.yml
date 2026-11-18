@@ -1,0 +1,16 @@
+services:
+  aipay-402-gateway:
+    build: .
+    image: aipay-402-gateway:0.1.0
+    ports:
+      - "8000:8000"
+    environment:
+      AIPAY_PROVIDER: mock
+      AIPAY_DB_PATH: /data/aipay_gateway.db
+      AIPAY_SERVICE_ID: srv_demo_0001
+    volumes:
+      - gateway-data:/data
+    restart: unless-stopped
+
+volumes:
+  gateway-data:
