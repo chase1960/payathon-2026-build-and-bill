@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 本地数据与密钥
+*.db
+.env
+
+# 系统/编辑器
+.DS_Store
+.idea/
+.vscode/
